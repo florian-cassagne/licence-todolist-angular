@@ -17,6 +17,11 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { AuthComponent } from './components/pages/auth/auth.component';
 import { RoutingComponent } from './routing/routing.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
+import {CreatorService} from './services/creator.service';
+import {TodoService} from './services/todo.service';
+import {UserService} from './services/user.service';
+import {AuthService} from './services/auth.service';
+import {AuthGuard} from './services/auth-guard';
 
 @NgModule({
   declarations: [
@@ -42,7 +47,7 @@ import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [TodoService, CreatorService, AuthGuard, AuthService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
