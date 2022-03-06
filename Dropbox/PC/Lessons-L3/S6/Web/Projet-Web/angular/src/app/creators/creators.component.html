@@ -1,8 +1,0 @@
-<ul [ngClass]="{'list-group-item': true,'list-group-item-success': creatorStatus === 'present',
-'list-group-item-danger': creatorStatus === 'absent'}">
-  <h4 [ngStyle]="{color: getColor()}">creator : {{ creatorName }} -- Statut : {{ getStatus() }}</h4>
-  <input type="text" class="form-control" [(ngModel)]="creatorName">
-  <button class="btn btn-sm btn-success"*ngIf="creatorStatus === 'absent'"(click)="onSwitch()">Présent</button>
-  <button class="btn btn-sm btn-danger"*ngIf="creatorStatus === 'present'"(click)="onSwitch()">Absent</button>
-  <a [routerLink]="[id]">Détail</a>
-</ul>
