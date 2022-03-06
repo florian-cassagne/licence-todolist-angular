@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h2>Les étudiants
+      <h2>Les créateurs
       </h2>
       <p>
         Mis à jour : {{ lastUpdate| async | date }}
@@ -19,14 +19,11 @@
               [disabled]="!isAuth"
               (click)="allPresent()">Tous Présents
       </button>
+
       <button class="btn btn-danger"
               [disabled]="!isAuth"
               (click)="allAbsent()">Tous Absent
       </button>
-
-
-      >
-
 
     </div>
   </div>
