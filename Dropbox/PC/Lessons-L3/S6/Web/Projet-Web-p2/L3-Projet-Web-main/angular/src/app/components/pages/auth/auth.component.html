@@ -1,0 +1,15 @@
+<h2 class="qua">
+  Authentification
+</h2>
+<p>
+  <button class="qua1"
+          class="btn btn-success" *ngIf="!authStatus" (click)="onSignIn()">Se Connecter
+  </button>
+
+  <button
+          class="btn btn-danger" *ngIf="authStatus" (click)="onSignOut()">Se Déconnecter
+  </button>
+</p>
+<div class = "q">
+  <img src="../../../../assets/img/2.jpg" class="img-fluid" alt="" />
+</div>

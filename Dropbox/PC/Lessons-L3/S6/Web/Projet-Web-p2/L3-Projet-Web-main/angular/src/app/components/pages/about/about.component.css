@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    padding-top: 50px;
+}
+p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.q{
+    /*padding-left: 300px;*/
+    text-align: center;
+}
+img{
+
+    width: 960px;
+    height: 540px;
+    margin: 0;
+    /*padding: 0;*/
+    box-sizing: border-box;
+}
